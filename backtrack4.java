@@ -41,9 +41,12 @@ public class backtrack4{
         for (int i=1;i<=9;i++){
             if (isSafe( Sudoku, row ,col,i )){
                 Sudoku[row][col]=i;
-                 }
-           if (SudokuSolver(Sudoku, nextrow, nextcol)){
+                 if (SudokuSolver(Sudoku, nextrow, nextcol)){
             return true;
+
+           }
+                 }
+          
 
            }
            Sudoku[row][col]=0;
